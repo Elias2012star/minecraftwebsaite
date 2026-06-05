@@ -1,7 +1,7 @@
 [package]
 name = "kingen_elias2012/create-80ct---professional-minecraft-server-website (3) BACKUP"
 version = "0.1.0"
-description = "Online multiplayer Spyfall-style game"
+description = "Stable smp"
 
 [[module]]
 name = "spy-game"
