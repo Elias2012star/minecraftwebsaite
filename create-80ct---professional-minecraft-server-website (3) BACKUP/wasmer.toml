@@ -1,0 +1,20 @@
+[package]
+name = "DITT-WASMER-ANVÄNDARNAMN/spy-game"
+version = "0.1.0"
+description = "Online multiplayer Spyfall-style game"
+
+[[module]]
+name = "spy-game"
+source = "."
+abi = "wasi"
+
+[module.interface.wasi]
+main-args = ["server.js"]
+
+[[command]]
+name = "server"
+module = "spy-game"
+runner = "wasi"
+
+[deploy]
+app_name = "spy-game"
