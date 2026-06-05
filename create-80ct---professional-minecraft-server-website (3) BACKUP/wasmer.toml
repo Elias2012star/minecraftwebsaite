@@ -1,20 +1,16 @@
 [package]
-name = "kingen_elias2012/create-80ct---professional-minecraft-server-website (3) BACKUP"
+name = "kingen_elias2012/minecraft-website"
 version = "0.1.0"
-description = "Stable smp"
+description = "Stable SMP - Professional Minecraft Server Website"
 
 [[module]]
-name = "spy-game"
+name = "static"
 source = "."
-abi = "wasi"
-
-[module.interface.wasi]
-main-args = ["server.js"]
 
 [[command]]
 name = "server"
-module = "spy-game"
-runner = "wasi"
+module = "static"
+runner = "https://webc.org/runner/static"
 
 [deploy]
-app_name = "spy-game"
+app_name = "minecraft-website"
